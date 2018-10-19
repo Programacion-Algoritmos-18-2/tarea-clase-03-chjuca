@@ -9,23 +9,23 @@ package herencias3;
  *
  * @author Carlos Juca
  */
-public class Policia extends Persona{
-    private String rango;
+public class Policia extends Persona{                                           // Se crea el objeto Policia que recibe caracteristicas del objeto persona
+    private String rango;                                                       // se crea caracteristicas propias del objeto Policia
     
-    public Policia(String n, String a,  int e, String r){
-        super(n,a,e);
-        setRango(r);   
+    public Policia(String n, String a,  int e, String r){                       // Constructor del Objeto policia
+        super(n,a,e);                                                           // Se recibe como herencia caracteristicas del objeto Persona
+        setRango(r);                                                            // Se llama a la funcion setRango
     }
-    public void setRango(String r){
-        rango = r;   
+    public void setRango(String r){                                         
+        rango = r;                                                              // Esta funcion da el valor de r a la caracteristica Rango
     }
     
-    public String getRango(){
+    public String getRango(){                                                   // Funcion devuelve rango
         return rango;
     }
     
     @Override
-    public String toString(){
+    public String toString(){                                                   // Se reescribe el metodo toString de la clase Persona
         return String.format("%s - %s", super.toString(), getRango());
     }
 }

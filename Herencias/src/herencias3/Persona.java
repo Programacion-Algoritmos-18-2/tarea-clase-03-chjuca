@@ -8,46 +8,46 @@ package herencias3;
 
 /**
  *
- * @author reroes
+ * @author Carlos Juca
  */
-public class Persona {
+public class Persona {                                                      // Se crea el Obejto Persona
     
-    protected String nombre;
-    private String apellido;
-    private int edad;
+    protected String nombre;                                                // Se crea la caracteristica nombre de tipo cadena
+    private String apellido;                                                // Se crea la caracteristaca apellido de tipo cadena
+    private int edad;                                                       // Se crea la cararcteristica edad de tipo entero
     
-    public Persona(String n, String a,  int e){
-        setNombre(n);
-        setApellido(a);
-        setEdad(e);
+    public Persona(String n, String a,  int e){                             // Constructor del Objeto Persona
+        setNombre(n);                                                       // Se llama a la funcion setNombre
+        setApellido(a);                                                     // Se llama a la funcion setAoellido
+        setEdad(e);                                                         // Se llama a la funcion setEdad
     }
     
-    public void setNombre(String n){
+    public void setNombre(String n){                                        // Esta funcion da el valor de n a la caracteristica nombre
         nombre = n;
     }
     
-    public void setApellido(String n){
+    public void setApellido(String n){                                      // Esta funcion da el valor de n a la caracteristica apellido
         apellido = n;
     }
     
-    public void setEdad(int n){
+    public void setEdad(int n){                                             // Esta funcion da el valor de n a la caracteristica edad
         edad = n;
     }
     
-    public int getEdad(){
+    public int getEdad(){                                                   // Funcion devuelve edad
         return edad;
     }
     
-    public String getNombre(){
+    public String getNombre(){                                              // Funcion devuelve nombre
         return nombre;
     }
     
-    public String getApellido(){
+    public String getApellido(){                                            // Funcion devuelve Apellido
         return apellido;
     }
     
     @Override
-    public String toString(){
+    public String toString(){                                               // Se reescribe el metodo toString del objeto
         return String.format("Nombre: %s - Apellido %s - Edad %d", 
                 getNombre(), getApellido(), getEdad());
     }

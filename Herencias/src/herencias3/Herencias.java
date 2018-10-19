@@ -7,7 +7,7 @@ package herencias3;
 
 /**
  *
- * @author reroes
+ * @author Carlos Juca
  */
 public class Herencias {
 

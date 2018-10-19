@@ -8,26 +8,26 @@ package herencias3;
 
 /**
  *
- * @author reroes
+ * @author Carlos Juca
  */
-public class Estudiante extends Persona{
-    private double matricula;
+public class Estudiante extends Persona{                                        // Se crea el objeto Estudiante que recibe caracteristicas del objeto persona
+    private double matricula;                                                   // se crea caracteristicas propias del objeto Estudiante
     
-    public Estudiante(String n, String a, int e, double mat){
-        super(n, a, e);
-        setMatricula(mat);
+    public Estudiante(String n, String a, int e, double mat){                   // Constructor del Objeto Estudiante
+        super(n, a, e);                                                         // Se recibe como herencia caracteristicas del objeto Persona
+        setMatricula(mat);                                                      // Se llama a la funcion setMatricula
     }
     
     @Override
-    public void setNombre(String n){
+    public void setNombre(String n){                                            // Esta funcion da el valor de n a la caracteristica nombre y la convierte en mayuscula
         nombre = n.toUpperCase();    
     }
     
-    public void setMatricula(double mat){
+    public void setMatricula(double mat){                                       // Esta funcion da el valor de mat a la caracteristica matricula
         matricula = mat;
     }
     
-    public double getMatricula(){
+    public double getMatricula(){                                               // Funcion devuelve matricula
         return matricula;
     }
     
@@ -39,7 +39,7 @@ public class Estudiante extends Persona{
     */
     
     @Override
-    public String toString(){
+    public String toString(){                                                   // Se reescribe el metodo toString de la clase Persona
     
         return String.format("%s - %.2f", super.toString(), getMatricula());
     }
